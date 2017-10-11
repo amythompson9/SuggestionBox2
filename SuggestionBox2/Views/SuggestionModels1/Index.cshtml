@@ -14,13 +14,11 @@
         <th>
             @Html.DisplayNameFor(model => model.Topic)
         </th>
-
-        <th>
-            @Html.DisplayNameFor(model => model.Name)
-        </th>
-
         <th>
             @Html.DisplayNameFor(model => model.Suggestion)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Name)
         </th>
         <th></th>
     </tr>
@@ -30,13 +28,11 @@
         <td>
             @Html.DisplayFor(modelItem => item.Topic)
         </td>
-
-        <td>
-            @Html.DisplayFor(modelItem => item.Name)
-        </td>
-
         <td>
             @Html.DisplayFor(modelItem => item.Suggestion)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Name)
         </td>
         <td>
             @Html.ActionLink("Edit", "Edit", new { id=item.RecordNum }) |

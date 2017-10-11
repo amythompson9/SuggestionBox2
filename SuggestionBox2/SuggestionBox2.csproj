@@ -164,10 +164,20 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\SuggestionModels1Controller.cs" />
     <Compile Include="Controllers\SuggestionModelsController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201710100023286_InitialCreate.cs" />
+    <Compile Include="Migrations\201710100023286_InitialCreate.Designer.cs">
+      <DependentUpon>201710100023286_InitialCreate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201710102351211_AddName.cs" />
+    <Compile Include="Migrations\201710102351211_AddName.Designer.cs">
+      <DependentUpon>201710102351211_AddName.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\SuggestionBox2Context.cs" />
     <Compile Include="Models\SuggestionModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -229,6 +239,11 @@
     <Content Include="Views\SuggestionModels\Details.cshtml" />
     <Content Include="Views\SuggestionModels\Edit.cshtml" />
     <Content Include="Views\SuggestionModels\Index.cshtml" />
+    <Content Include="Views\SuggestionModels1\Create.cshtml" />
+    <Content Include="Views\SuggestionModels1\Delete.cshtml" />
+    <Content Include="Views\SuggestionModels1\Details.cshtml" />
+    <Content Include="Views\SuggestionModels1\Edit.cshtml" />
+    <Content Include="Views\SuggestionModels1\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -238,6 +253,14 @@
     <None Include="Project_Readme.html" />
     <Content Include="Scripts\jquery-3.2.1.slim.min.map" />
     <Content Include="Scripts\jquery-3.2.1.min.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201710100023286_InitialCreate.resx">
+      <DependentUpon>201710100023286_InitialCreate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201710102351211_AddName.resx">
+      <DependentUpon>201710102351211_AddName.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
